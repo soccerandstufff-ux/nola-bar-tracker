@@ -1,6 +1,11 @@
 {
-  "rewrites": [
-    { "source": "/api/busyness", "destination": "/api/busyness.js" },
-    { "source": "/", "destination": "/index.html" }
+  "version": 2,
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "api/busyness.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/busyness", "dest": "/api/busyness.js" },
+    { "src": "/", "dest": "/index.html" }
   ]
 }
