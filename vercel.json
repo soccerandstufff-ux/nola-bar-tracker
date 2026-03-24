@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api/busyness", "destination": "/api/busyness.js" },
+    { "source": "/", "destination": "/index.html" }
+  ]
+}
